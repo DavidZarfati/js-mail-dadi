@@ -34,7 +34,43 @@
 // }
 // console.log(somma);
 
-let limiteNumeri = prompt("Inserisci il numero fino al quale vuoi sapere il cubo")
-for (let i = 1; i <= limiteNumeri; i++) {
-    console.log(i * i * i)
+// let limiteNumeri = prompt("Inserisci il numero fino al quale vuoi sapere il cubo")
+// for (let i = 1; i <= limiteNumeri; i++) {
+//     console.log(i * i * i)
+// }
+
+const nomi = [
+    "Albert",
+    "Leonardo",
+    "Marilyn",
+    "Michael",
+    "Serena",
+    "Elon",
+    "Frida",
+    "Steve",
+    "Beyoncé",
+    "David"
+];
+
+const cognomi = [
+    "Einstein",
+    "da Vinci",
+    "Monroe",
+    "Jackson",
+    "Williams",
+    "Musk",
+    "Kahlo",
+    "Jobs",
+    "Knowles",
+    "Beckham"
+];
+let invitati = []
+for (i = 0; i < 5; i++) {
+    let indiceNome = parseInt(Math.random() * nomi.length)
+    let nomeSingolo = nomi[indiceNome]
+    nomi.splice(indiceNome, 1)
+    let indiceCognome = parseInt(Math.random() * cognomi.length)
+    let cognomeSingolo = cognomi[indiceCognome]
+    cognomi.splice(indiceCognome, 1)
+    console.log(indiceNome, nomeSingolo, indiceCognome, cognomeSingolo)
 }
