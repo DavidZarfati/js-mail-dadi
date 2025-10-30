@@ -18,3 +18,16 @@ else if (emailVerificata === 0) {
 
 //////////////////////////RICORDA DI TOGLIERE IL COMMENTO DAL PROMPT RIGA 2
 // //////////////////////DELLA MAIL QUANDO FINISCI ESERCIZIO DADI
+
+let dadoUno = parseInt(Math.random() * 6 + 1)
+let dadoDue = parseInt(Math.random() * 6 + 1)
+console.log(dadoUno, dadoDue)
+if (dadoUno > dadoDue) {
+    console.log("Dado Uno è maggiore tra i due")
+}
+else if (dadoDue > dadoUno) {
+    console.log("Dado Due è maggiore tra i due")
+}
+else if (dadoUno = dadoDue) {
+    console.log("I Dadi sono Uguali")
+}
