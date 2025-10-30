@@ -22,14 +22,19 @@
 // }
 
 
-let numero = 1234
-let somma = 0
-let cifreStringa = numero.toString()
-// console.log(cifreStringa)
-let cifreSingole = cifreStringa.split("")
-// console.log(cifreSingole);
-for (let i = 0; i < cifreSingole.length; i++) {
-    let cifreNumeri = parseInt(cifreSingole[i]);
-    somma = somma + cifreNumeri;
+// let numero = 1234
+// let somma = 0
+// let cifreStringa = numero.toString()
+// // console.log(cifreStringa)
+// let cifreSingole = cifreStringa.split("")
+// // console.log(cifreSingole);
+// for (let i = 0; i < cifreSingole.length; i++) {
+//     let cifreNumeri = parseInt(cifreSingole[i]);
+//     somma = somma + cifreNumeri;
+// }
+// console.log(somma);
+
+let limiteNumeri = prompt("Inserisci il numero fino al quale vuoi sapere il cubo")
+for (let i = 1; i <= limiteNumeri; i++) {
+    console.log(i * i * i)
 }
-console.log(somma);
