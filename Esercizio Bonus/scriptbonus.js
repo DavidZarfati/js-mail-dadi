@@ -39,38 +39,69 @@
 //     console.log(i * i * i)
 // }
 
-const nomi = [
-    "Albert",
-    "Leonardo",
-    "Marilyn",
-    "Michael",
-    "Serena",
-    "Elon",
-    "Frida",
-    "Steve",
-    "Beyoncé",
-    "David"
-];
+// const nomi = [
+//     "Albert",
+//     "Leonardo",
+//     "Marilyn",
+//     "Michael",
+//     "Serena",
+//     "Elon",
+//     "Frida",
+//     "Steve",
+//     "Beyoncé",
+//     "David"
+// ];
 
-const cognomi = [
-    "Einstein",
-    "da Vinci",
-    "Monroe",
-    "Jackson",
-    "Williams",
-    "Musk",
-    "Kahlo",
-    "Jobs",
-    "Knowles",
-    "Beckham"
-];
-let invitati = []
-for (i = 0; i < 5; i++) {
-    let indiceNome = parseInt(Math.random() * nomi.length)
-    let nomeSingolo = nomi[indiceNome]
-    nomi.splice(indiceNome, 1)
-    let indiceCognome = parseInt(Math.random() * cognomi.length)
-    let cognomeSingolo = cognomi[indiceCognome]
-    cognomi.splice(indiceCognome, 1)
-    console.log(indiceNome, nomeSingolo, indiceCognome, cognomeSingolo)
+// const cognomi = [
+//     "Einstein",
+//     "da Vinci",
+//     "Monroe",
+//     "Jackson",
+//     "Williams",
+//     "Musk",
+//     "Kahlo",
+//     "Jobs",
+//     "Knowles",
+//     "Beckham"
+// ];
+// let invitati = []
+// for (i = 0; i < 5; i++) {
+//     let indiceNome = parseInt(Math.random() * nomi.length)
+//     let nomeSingolo = nomi[indiceNome]
+//     nomi.splice(indiceNome, 1)
+//     let indiceCognome = parseInt(Math.random() * cognomi.length)
+//     let cognomeSingolo = cognomi[indiceCognome]
+//     cognomi.splice(indiceCognome, 1)
+//     console.log(indiceNome, nomeSingolo, indiceCognome, cognomeSingolo)
+// }
+
+let A = [3, 5, 7, 9]
+let B = [4, 6, 8, 10, 12, 14]
+
+if (A.length < B.length) {
+    for (i = 0; i <= B.length - A.length; i++) {
+        A.push("Aggiungi")
+    }
+    console.log(A, B)
 }
+else if (A.length > B.length) {
+    for (i = 0; i <= A.length - B.length; i++) {
+        B.push("Aggiungi")
+    }
+    console.log(A, B)
+}
+else if (A.length == B.length) {
+    console.log("i tuoi array hanno la stessa lunghezza")
+}
+
+
+// if (A.length > B.length) {
+//     B.push("Aggiungi")
+// }
+// else if (B.length > A.length) {
+//     A.push("Aggiungi")
+// }
+// else if (B.length === A.length) {
+//     console.log("i tuoi array hanno la stessa lunghezza")
+// }
+// console.log(A, B)
